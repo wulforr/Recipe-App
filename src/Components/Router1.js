@@ -3,13 +3,14 @@ import { BrowserRouter, Switch, Route } from "react-router-dom"
 import App from "./App"
 import Recipe1 from "./recipe"
 
-class Router extends React.Component {
+class Router1 extends React.Component {
     render() {
         return (
             <BrowserRouter>
+            {/* Select the proper path between Main page and specific recipe page */}
                 <Switch>
                     <Route exact path="/" component={App} />
-                    <Route path="/recipe/1" component={Recipe1} />
+                    <Route path="/recipe/:id" component={Recipe1} />
                 </Switch>
             </BrowserRouter>
         )
@@ -17,4 +18,4 @@ class Router extends React.Component {
 }
 
 
-export default Router
+export default Router1
