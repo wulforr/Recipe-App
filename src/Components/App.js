@@ -3,7 +3,7 @@ import Form from "./form"
 import Recipe from "./recipes"
 
 
-const APIKEY = "f2aff6224c8c1b303057c7c7ac5a40fd";
+const APIKEY = Write your own API key here;
 class App extends React.Component {
     constructor() {
         super()
